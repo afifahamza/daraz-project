@@ -19,10 +19,18 @@ body {
   height: 55px;
 }
 .search {
-  height: 20px;
-  width: 70px;
+  height: 36px;
+  width: 50vw;
+  padding-inline: 15px;
+  margin-inline: 25px;
+  border-radius: 10px;
+  border: none;
 }
 .buttons {
   font-weight: bold;
   font-variant: small-caps;
+}
+.actions-row {
+  display: flex;
+  align-items: center;
 }
