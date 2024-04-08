@@ -1,0 +1,28 @@
+body {
+  margin: 0px;
+}
+.header {
+  background-color: orangered;
+  height: 80px;
+  padding-inline: 100px;
+  padding-top: 8px;
+}
+.nav {
+  display: flex;
+}
+.nav-item {
+  font-size: 14px;
+  color: white;
+  padding-right: 30px;
+}
+#image {
+  height: 55px;
+}
+.search {
+  height: 20px;
+  width: 70px;
+}
+.buttons {
+  font-weight: bold;
+  font-variant: small-caps;
+}
