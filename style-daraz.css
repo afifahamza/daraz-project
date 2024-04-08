@@ -23,6 +23,7 @@ body {
   width: 50vw;
   padding-inline: 15px;
   margin-inline: 25px;
+  margin-top: 10px;
   border-radius: 10px;
   border: none;
 }
