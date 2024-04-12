@@ -35,3 +35,73 @@ body {
   display: flex;
   align-items: center;
 }
+.action-button {
+  padding-right: 10px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: orangered;
+  margin-top: 10px;
+  height: 36px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.action-button:hover {
+  background-color: red;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  }
+}
+.separator {
+  margin-top: 10px;
+  margin-inline: 10px;
+  height: 10px;
+  width: 1.5px;
+  background-color: white;
+}
+
+.dropdown {
+  display: none;
+  width: 180px;
+  height: 90px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px 0.5px gray;
+  background-color: white;
+  position: absolute;
+  top: 75px;
+  margin-left: -80px;
+}
+
+.language-btn:hover .dropdown {
+  display: block;
+}
+.dropdown:hover .dropdown {
+  display: block;
+}
+.drop-text {
+  color: gray;
+  margin: 10px 0px 5px 14px;
+  font-size: 14px;
+}
+.drop-select {
+  font-size: 13px;
+  color: gray;
+}
+.radio-input:checked + .drop-select {
+  color: orangered;
+}
+.radio-input {
+  margin-left: 24px;
+  accent-color: orangered;
+}
