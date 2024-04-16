@@ -1,5 +1,41 @@
+.test-1 .test {
+}
+/* Child selector */
+.test-1 > #id-1 > .test {
+}
+/* Sibling selector */
+.test + .test-0 {
+}
+
+/* Specificity */
+div.test {
+  color: red;
+}
+
+#id-1 {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.fz-40 {
+  font-size: 40px;
+}
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.d-flex {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 3px;
+  width: 100%;
+}
+
 body {
   margin: 0px;
+  background-color: rgb(246, 246, 246);
 }
 .header {
   background-color: orangered;
@@ -104,4 +140,30 @@ body {
 .radio-input {
   margin-left: 24px;
   accent-color: orangered;
+}
+.advestisement {
+  display: flex;
+  align-items: center;
+}
+.items-list {
+  height: 350px;
+  width: 200px;
+  background-color: white;
+  border: 1.5px solid lightgray;
+  box-shadow: 0px 0px 4px 0.5px gray;
+  border-radius: 10px;
+}
+.nobullets {
+  color: gray;
+  font-size: 14px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 6px 0px 0px 10px;
+  line-height: 2;
+  vertical-align: sub;
+}
+.icon {
+  height: 20px;
+  width: auto;
+  vertical-align: sub;
 }
