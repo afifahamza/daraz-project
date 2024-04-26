@@ -24,6 +24,10 @@
 // 8. !=
 // 9. !==
 
+// GATES
+// ||
+// &&
+
 // Functions
 function add(a, b) {
   return a + b; // body

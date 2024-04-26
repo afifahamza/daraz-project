@@ -1,5 +1,7 @@
 <html>
   <head>
+    <script src="daraz.js"></script>
+
     <link rel="stylesheet" href="style-daraz.css" />
     <link
       rel="stylesheet"
@@ -18,69 +20,73 @@
         <h2 style="text-align: center">Login here</h2>
         <div class="d-flex">
           <div style="width: 80px">Username:</div>
-          <input type="text" />
+          <input type="text" oninput="onInputUsername(this.value)" />
         </div>
         <div class="d-flex">
           <div style="width: 80px">Password:</div>
           <input type="password" />
         </div>
         <div class="d-flex">
-          <button id="back-btn">Login</button>
+          <button id="back-btn" onclick="gotohomepage()">Login</button>
           <div style="margin-inline: 5px">Not a memember yet?</div>
           <a href="www.facebook.com" class="selectedtext">Register</a>
         </div>
       </div>
     </div>
-    <div id="homepage">
-      <div id="header" class="header">
-        <div class="nav">
-          <div class="nav-item">Become a Seller</div>
-          <div class="nav-item">Daraz Affiliate Program</div>
-          <div class="nav-item">Help and support</div>
-          <div class="nav-item">Daraz logistics Partner</div>
-        </div>
-        <div class="actions-row">
-          <img src="darazlogo.png" alt="fuckoff" id="image" />
-
-          <input class="search" type="text" placeholder="Search in Daraz" />
-          <button id="login-btn" class="action-button">
-            <span class="material-symbols-outlined"> person </span> Login
-          </button>
-          <div class="separator"></div>
-          <button class="action-button">Sign Up</button>
-
-          <div class="language-btn">
-            <button class="action-button" style="margin-left: 10px">
-              <span class="material-symbols-outlined"> language </span>EN
-            </button>
-
-            <div class="dropdown">
-              <div class="drop-text">Select Language</div>
-              <input
-                class="radio-input"
-                type="radio"
-                id="urdu"
-                name="fav_language"
-              />
-              <label class="drop-select" for="urdu">UR/Urdu</label><br />
-              <input
-                class="radio-input"
-                type="radio"
-                id="english"
-                name="fav_language"
-              />
-              <label class="drop-select" for="english">EN/English</label><br />
-            </div>
+    <div id="main2">
+      <div id="homepage">
+        <div id="header" class="header">
+          <div class="nav">
+            <div class="nav-item">Become a Seller</div>
+            <div class="nav-item">Daraz Affiliate Program</div>
+            <div class="nav-item">Help and support</div>
+            <div class="nav-item">Daraz logistics Partner</div>
           </div>
+          <div class="actions-row">
+            <img src="darazlogo.png" alt="fuckoff" id="image" />
 
-          <button class="action-button">
-            <span class="material-symbols-outlined" style="margin-left: 4px">
-              shopping_cart
-            </span>
-          </button>
+            <input class="search" type="text" placeholder="Search in Daraz" />
+            <button id="login-btn" onclick="showlogin()" class="action-button">
+              <span class="material-symbols-outlined"> person </span> Login
+            </button>
+            <div class="separator"></div>
+            <button class="action-button">Sign Up</button>
+
+            <div class="language-btn">
+              <button class="action-button" style="margin-left: 10px">
+                <span class="material-symbols-outlined"> language </span>EN
+              </button>
+
+              <div class="dropdown">
+                <div class="drop-text">Select Language</div>
+                <input
+                  class="radio-input"
+                  type="radio"
+                  id="urdu"
+                  name="fav_language"
+                />
+                <label class="drop-select" for="urdu">UR/Urdu</label><br />
+                <input
+                  class="radio-input"
+                  type="radio"
+                  id="english"
+                  name="fav_language"
+                />
+                <label class="drop-select" for="english">EN/English</label
+                ><br />
+              </div>
+            </div>
+
+            <button class="action-button">
+              <span class="material-symbols-outlined" style="margin-left: 4px">
+                shopping_cart
+              </span>
+            </button>
+          </div>
         </div>
       </div>
-      <div class="advestisement">
+
+      <div id="main">
         <div id="items-list" class="items-list">
           <ul class="nobullets">
             <li>
@@ -88,28 +94,92 @@
               Groceries & Pets
             </li>
             <li>
-              <i class="fa-solid fa-wave-pulse"></i>
-              Health & Beauty
+              <img src="make-up.png" alt="" class="icon" />Health & Beauty
             </li>
-            <li>Men's Fashion</li>
-            <li>Women's Fashion</li>
-            <li>Mother & Baby</li>
+            <li><img src="shirt.png" alt="" id="icon" />Men's Fashion</li>
+            <li><img src="dress.png" alt="" class="icon" />Women's Fashion</li>
             <li>
-              <img src="home_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
-              Home & Lifes style
+              <img src="teddy-bear.png" alt="" class="icon" />Mother & Baby
             </li>
-            <li>Electronic Devices</li>
-            <li>Electronic Accessories</li>
-            <li>TV & Home Appliances</li>
-            <li>Sports & Outdoor</li>
-            <li>Watches, Bags & Jewellery</li>
-            <li>Automotive & Motorbike</li>
+            <li>
+              <img src="sofa.png" alt="" class="icon" />Home & Lifes style
+            </li>
+            <li>
+              <img
+                src="photo-camera-interface-symbol-for-button.png"
+                alt=""
+                class="icon"
+              />Electronic Devices
+            </li>
+            <li>
+              <img src="usb-cable.png" alt="" class="icon" />Electronic
+              Accessories
+            </li>
+            <li>
+              <img src="fridge.png" alt="" style="margin: 0%" class="icon" />TV
+              & Home Appliances
+            </li>
+            <li>
+              <img
+                src="ball-of-basketball.png"
+                alt=""
+                style="height: 18px"
+                class="icon"
+              />Sports & Outdoor
+            </li>
+            <li>
+              <img src="wristwatch.png" alt="" class="icon" />Watches, Bags &
+              Jewellery
+            </li>
+            <li>
+              <img src="car-key.png" alt="" class="icon" />Automotive &
+              Motorbike
+            </li>
           </ul>
+        </div>
+
+        <div class="content">
+          <div class="d-flex">
+            <div id="counter"></div>
+            <div>
+              <button id="plus" onclick="plus()">+</button>
+              <div><button id="minus" onclick="minus()">-</button></div>
+            </div>
+
+            <button
+              style="height: 40px; margin-inline: 10px; margin-top: 20px"
+              onclick="createProduct()"
+            >
+              Create product
+            </button>
+            <button
+              style="height: 40px; margin-inline: 10px; margin-top: 20px"
+              onclick="clearProduct()"
+            >
+              clear product
+            </button>
+          </div>
+
+          <div>
+            <div style="font-weight: bold">Title:</div>
+            <input
+              class="inputtitle"
+              type="text"
+              oninput="onInputTitle(this.value)"
+            />
+            <div>Description</div>
+
+            <input
+              class="inputdescription"
+              type="text"
+              oninput="onInputDescription(this.value)"
+            />
+          </div>
+          <div id="products-list"></div>
         </div>
       </div>
     </div>
-    <div id="main"></div>
   </body>
-  <script src="daraz.js"></script>
+  <script src="cart.js"></script>
   <script src="js-playground.js"></script>
 </html>
